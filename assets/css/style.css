@@ -14,7 +14,7 @@ body {
 header {
   padding: 40px;
   text-align: center;
-  background: #13293d;
+  background: #0c1924d5;
   color: #fff;
 }
 
@@ -22,7 +22,7 @@ header {
 position: absolute;
 top: 70%;
 background-color: #13293d;
-max-width: 25%;
+max-width: 35%;
 text-align: right;
 padding: 5%;
 color: #fff;
@@ -132,10 +132,22 @@ footer a {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  main,
-  nav, aside {
+@media screen and (max-width: 852px) {
+  main, nav, footer {
     flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  aside {
+    border-right: 0px;
+    border-bottom: 1px solid #000000;
+  }
+
+  .card {
+    flex: 1 0 90%;
   }
 }
 
