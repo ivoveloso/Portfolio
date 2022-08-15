@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+.figure {
+position: absolute;
+top: 70%;
+background-color: #13293d;
+max-width: 25%;
+text-align: right;
+padding: 5%;
+color: #fff;
+}
+
+nav {
+  display: flex;
+  background-color: #d8a47f;
+  justify-content: right;
+}
+
+nav a {
+  color: #13293d;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
+aside {
+  flex: 1;
+  background-color: white;
+  text-align: left;
+  max-width: 200px;
+  min-width: 200px;
+  border-right: 1px solid #000000;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+footer {
+  display: flex;
+  flex-grow: 1;
+  width: auto;
+  bottom: 0;
+  color: #000000;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+footer a {
+  color: #13293d;
+  font-size: 20px;
+  padding: 25px 5%;
+  text-decoration: underline;
+}
+
+.about {
+  display: flex;
+  text-align: left;
+  flex: 1;
+}
+
+.about p {
+  padding: 0px 30px;
+}
+
+.products {
+  flex: 4;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  flex: 0 0 46.5%;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  opacity: 0.5;
+  transition: 0.2s ease-in-out;
+}
+
+.bigcard {
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  flex: 1 0 90%;
+  margin: 15px;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  opacity: 0.5;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  top: -58px;
+}
+
+.bigcard img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav, aside {
+    flex-direction: column;
+  }
+}
+
+.bigcard:hover, .card:hover {
+  box-shadow:10px 10px 5px #aaaaaa;
+  mix-blend-mode: normal;
+  opacity: 1;
+}
